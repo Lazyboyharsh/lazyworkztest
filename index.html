@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAZYWORKz</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        xintegrity="sha512-Fo3rlrZj/k7ujTnHg4C+0A0r/tP8y2xP/jP1pQzI6g3eC3f2C2g4f5jF8jA/Xn/4jR2l9B3gC2mN4o+f8w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Fixed Header -->
+    <header id="main-header" class="bg-white/80 backdrop-blur-sm shadow-sm">
+        <nav class="container mx-auto py-4 flex justify-between items-center">
+            <!-- Logo --><a href="#hero" class="text-3xl font-extrabold header-logo">
+                LAZYWORKz
+            </a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#process" class="header-link font-medium transition duration-300">Process</a>
+                <a href="#work" class="header-link font-medium transition duration-300">Our Work</a>
+                <a href="#services" class="header-link font-medium transition duration-300">Services</a>
+                <!-- <a href="#testimonials" class="header-link font-medium transition duration-300">Clients</a> -->
+                <a href="#team" class="header-link font-medium transition duration-300">Our Team</a>
+                <a href="#tech" class="header-link font-medium transition duration-300">Tech</a>
+                <!-- <a href="#contact" class="bg-brand-color text-white px-5 py-2 rounded-full font-semibold hover:bg-brand-color-dark shadow-lg transition duration-300">
+                    Get Quote
+                </a> -->
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                    <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-xl">
+            <a href="#process"
+                class="block text-gray-600 hover:bg-gray-100 px-6 py-3 transition duration-200">Process</a>
+            <a href="#work" class="block text-gray-600 hover:bg-gray-100 px-6 py-3 transition duration-200">Our Work</a>
+            <a href="#services"
+                class="block text-gray-600 hover:bg-gray-100 px-6 py-3 transition duration-200">Services</a>
+            <!-- <a href="#testimonials" class="block text-gray-600 hover:bg-gray-100 px-6 py-3 transition duration-200">Clients</a> -->
+            <a href="#team" class="block text-gray-600 hover:bg-gray-100 px-6 py-3 transition duration-200">Our Team</a>
+            <a href="#tech" class="block text-gray-600 hover:bg-gray-100 px-6 py-3 transition duration-200">Tech</a>
+            <!-- <a href="#contact" class="block bg-brand-color text-white text-center font-semibold m-4 px-5 py-3 rounded-full hover:bg-brand-color-dark transition duration-300">
+                Get Quote
+            </a> -->
+        </div>
+    </header>
+
+    <!-- Main Scroll Container -->
+    <div id="main-container">
+
+        <!-- Scene 1: Hero -->
+        <section id="hero" class="full-section aurora-bg" data-theme="light">
+            <div class="w-full">
+                <!-- Responsive text sizing -->
+                <h1 class="font-extrabold text-gray-900 drop-shadow-lg animated-content">
+                    Smart websites.
+                </h1>
+                <h1 class="font-extrabold brand-color drop-shadow-lg animated-content delay-1">
+                    Smooth design.
+                </h1>
+                <!-- <p class="mt-8 text-lg md:text-xl text-gray-700 max-w-2xl mx-auto animated-content delay-2">
+                    We are a digital agency that builds high-performance experiences that elevate your brand and drive
+                    results.
+                </p> -->
+                <div class="mt-4 text-sm md:text-md text-gray-600 font-medium animated-content delay-3">
+                    <span class="inline-block px-3 py-1 bg-amber-50 text-brand-color rounded-full mr-2 mb-2">Custom
+                        Dev</span>
+                    <span
+                        class="inline-block px-3 py-1 bg-amber-50 text-brand-color rounded-full mr-2 mb-2">Branding</span>
+                    <span
+                        class="inline-block px-3 py-1 bg-amber-50 text-brand-color rounded-full mr-2 mb-2">eComm</span>
+                    <span class="inline-block px-3 py-1 bg-amber-50 text-brand-color rounded-full mb-2">Data
+                        Analytics</span>
+                </div>
+            </div>
+            <div class="scroll-down-arrow animated-content delay-4">
+                <span></span>
+            </div>
+        </section>
+
+        <!-- Scene 2: Process (Horizontal Scroll) -->
+        <section id="process" class="full-section" data-theme="dark">
+            <div class="section-intro-text animated-content">
+                <h2>Our Process</h2>
+                <p>From idea to launch, we're with you every step of the way.</p>
+            </div>
+            <div id="process-container" class="horizontal-container animated-content delay-1">
+                <!-- Card 1 -->
+                <div class="process-card">
+                    <div class="step-number">01</div>
+                    <h3 class="text-2xl font-bold mt-4 mb-2">Discover & Define</h3>
+                    <p class="text-gray-300">We start by deeply understanding your goals, audience, and market to build
+                        a rock-solid strategy.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="process-card">
+                    <div class="step-number">02</div>
+                    <h3 class="text-2xl font-bold mt-4 mb-2">Design & Iterate</h3>
+                    <p class="text-gray-300">Our team creates pixel-perfect, intuitive UI/UX designs, gathering your
+                        feedback at every stage.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="process-card">
+                    <div class="step-number">03</div>
+                    <h3 class="text-2xl font-bold mt-4 mb-2">Develop & Build</h3>
+                    <p class="text-gray-300">We write clean, scalable code using cutting-edge technology to bring your
+                        vision to life.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="process-card">
+                    <div class="step-number">04</div>
+                    <h3 class="text-2xl font-bold mt-4 mb-2">Deploy & Optimize</h3>
+                    <p class="text-gray-300">We launch your project and monitor its performance, making data-driven
+                        improvements for growth.</p>
+                </div>
+                <!-- Card 5 (Extra) -->
+                <div class="process-card"
+                    style="min-width: 200px; background: transparent; border: none; backdrop-filter: none;">
+                    <div
+                        class="text-2xl md:text-3xl font-bold text-gray-700 h-full flex items-center justify-center text-center">
+                        Your success story starts here.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scene 3: Our Work (Horizontal Scroll) -->
+        <section id="work" class="full-section" data-theme="light">
+            <div class="section-intro-text animated-content">
+                <h2 class="text-gray-900">Our Latest Work</h2>
+                <p>See how we've helped brands like yours succeed.</p>
+            </div>
+            <div id="work-container" class="horizontal-container animated-content delay-1">
+                <!-- Work 1 --><a href="#" class="work-card">
+                    <img src="https://placehold.co/600x400/fde6d8/bd5818?text=Project+Alpha"
+                        alt="Project Alpha Screenshot"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x400/fde6d8/bd5818?text=Image+Error';">
+                    <div class="work-card-content">
+                        <span class="work-card-category">eCommerce</span>
+                        <h3 class="work-card-title">Project Alpha</h3>
+                        <p class="text-gray-700 mt-4">A high-conversion headless eCommerce platform for a global fashion
+                            brand.</p>
+                    </div>
+                </a>
+                <!-- Work 2 --><a href="#" class="work-card">
+                    <img src="https://placehold.co/600x400/fde6d8/bd5818?text=Project+Beta"
+                        alt="Project Beta Screenshot"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x400/fde6d8/bd5818?text=Image+Error';">
+                    <div class="work-card-content">
+                        <span class="work-card-category">Branding & Web App</span>
+                        <h3 class="work-card-title">Project Beta</h3>
+                        <p class="text-gray-700 mt-4">A complete brand identity and SaaS platform for a new FinTech
+                            startup.</p>
+                    </div>
+                </a>
+                <!-- Work 3 --><a href="#" class="work-card">
+                    <img src="https://placehold.co/600x400/fde6d8/bd5818?text=Project+Gamma"
+                        alt="Project Gamma Screenshot"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x400/fde6d8/bd5818?text=Image+Error';">
+                    <div class="work-card-content">
+                        <span class="work-card-category">Data Analytics</span>
+                        <h3 class="work-card-title">Project Gamma</h3>
+                        <p class="text-gray-700 mt-4">Customer data platform that provided 150% ROI in the first
+                            quarter.</p>
+                    </div>
+                </a>
+                <!-- Work 4 (Extra) --><a href="#" class="work-card"
+                    style="min-width: 200px; background: transparent; box-shadow: none; display: flex; align-items: center; justify-content: center;">
+                    <div
+                        class="text-2xl md:text-3xl font-bold text-gray-400 h-full flex items-center justify-center text-center p-10">
+                        Your project could be next.
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Scene 4: Services -->
+        <section id="services" class="full-section" data-theme="light">
+            <div class="section-intro-text animated-content">
+                <h2 class="text-gray-900">What We Do Best.</h2>
+            </div>
+            <div class="service-card-container animated-content delay-1">
+                <!-- Service 1 -->
+                <div class="service-card animated-content delay-1">
+                    <i class="fas fa-laptop-code brand-color"></i>
+                    <h3 class="text-2xl font-bold mb-2">Custom Dev</h3>
+                    <p class="text-gray-600">Bespoke websites and web applications built to your exact specifications.
+                    </p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card animated-content delay-2">
+                    <i class="fas fa-palette brand-color"></i>
+                    <h3 class="text-2xl font-bold mb-2">Branding</h3>
+                    <p class="text-gray-600">Memorable brand identities, logos, and UI/UX designs that captivate users.
+                    </p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card animated-content delay-3">
+                    <i class="fas fa-shopping-cart brand-color"></i>
+                    <h3 class="text-2xl font-bold mb-2">eComm</h3>
+                    <p class="text-gray-600">Powerful, high-conversion online stores that drive sales and growth.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card animated-content delay-4">
+                    <i class="fas fa-chart-line brand-color"></i>
+                    <h3 class="text-2xl font-bold mb-2">Data Analytics</h3>
+                    <p class="text-gray-600">Turning your data into actionable insights to make smarter business
+                        decisions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scene 5: Testimonials -->
+        <!-- <section id="testimonials" class="full-section" data-theme="dark">
+            <div class="testimonial-wrapper animated-content">
+                <i class="fas fa-quote-left text-brand-light text-6xl mb-8 opacity-50"></i>
+                
+               <div class="testimonial-item active">
+                    <p class="testimonial-quote">"PixelFlow didn't just build a website; they built a conversion machine. Our engagement is up 300%."</p>
+                    <div class="testimonial-author">
+                        Alex Johnson
+                        <span class="block">CEO, TechStartup</span>
+                    </div>
+                </div>
+             <div class="testimonial-item">
+                    <p class="testimonial-quote">"The branding work was exceptional. They perfectly captured our company's essence in a way we couldn't articulate."</p>
+                    <div class="testimonial-author">
+                        Maria Sanchez
+                        <span class="block">Founder, LocalGoods</span>
+                    </div>
+                </div>
+            <div class="testimonial-item">
+                    <p class="testimonial-quote">"Seamless communication and top-notch project management. They delivered beyond our expectations."</p>
+                    <div class="testimonial-author">
+                        David Kim
+                        <span class="block">CTO, FinServe</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-nav">
+                    <button id="prev-testimonial" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next-testimonial" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div> -->
+        </section>
+
+        <!-- Scene 6: NEW Team Section -->
+        <section id="team" class="full-section" data-theme="light">
+            <div class="section-intro-text animated-content">
+                <h2 class="text-gray-900">Meet the Innovators</h2>
+            </div>
+            <div class="team-grid-container animated-content delay-1">
+                <!-- Team Member 1 -->
+                <div class="team-card animated-content delay-2">
+                    <img src="images/harsh.jpg" alt="Jane Doe"
+                        onerror="this.onerror=null;this.src='https://placehold.co/128x128/fde6d8/bd5818?text=JD';">
+                    <h3 class="team-card-name">Harsh Jain</h3>
+                    <p class="team-card-title">Founder & CEO</p>
+                    <div class="team-card-socials">
+                        <a href="https://www.linkedin.com/in/harsh-jain-499a0a264/" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Lazyboyharsh" aria-label="github"><i class="fab fa-github"></i></a>
+                        <a href="https://harshjainportfolio.netlify.app/" aria-label="Dribbble"><i
+                                class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="team-card animated-content delay-3">
+                    <img src="images/sumit-sir.jpg" alt="Sumit Kumar"
+                        onerror="this.onerror=null;this.src='https://placehold.co/128x128/fde6d8/bd5818?text=JS';">
+                    <h3 class="team-card-name">Sumit Kumar</h3>
+                    <p class="team-card-title">Developer & Tech Mentor</p>
+                    <div class="team-card-socials">
+                        <a href="https://www.linkedin.com/in/mrsumitkumar/" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://msk.shikohabad.in/" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="team-card animated-content delay-4">
+                    <img src="images/abhishek.jpg" alt="Abhishek Jain"
+                        onerror="this.onerror=null;this.src='https://placehold.co/128x128/fde6d8/bd5818?text=AL';">
+                    <h3 class="team-card-name">Abhishek Jain</h3>
+                    <p class="team-card-title">Media Editor</p>
+                    <div class="team-card-socials">
+                        <!-- <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a> -->
+                        <!-- <a href="#" aria-label="Github"><i class="fab fa-github"></i></a> -->
+                        <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scene 7: Tech Stack -->
+        <section id="tech" class="full-section" data-theme="dark">
+            <div class="section-intro-text animated-content">
+                <h2>Technology We Master.</h2>
+            </div>
+            <div class="tech-grid animated-content delay-1" style="margin-top: 100px;">
+                <div class="tech-icon animated-content delay-1"><i class="fab fa-react"></i><span>React</span></div>
+                <div class="tech-icon animated-content delay-2"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+                <div class="tech-icon animated-content delay-3"><i class="fab fa-python"></i><span>Python</span></div>
+                <div class="tech-icon animated-content delay-4"><i class="fab fa-figma"></i><span>Figma</span></div>
+                <div class="tech-icon animated-content delay-5"><i class="fab fa-php"></i><span>Php</span></div>
+                <div class="tech-icon animated-content delay-1"><i class="fas fa-database"></i><span>SQL/NoSQL</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scene 8: Final CTA -->
+        <section id="cta" class="full-section" data-theme="light">
+            <div class="w-full">
+                <h2 class="animated-content">
+                    Ready to build
+                    <br>
+                    <span class="brand-color">your future?</span>
+                </h2>
+                <p class="animated-content delay-1">
+                    Let's talk about your project. We'll provide a free, no-obligation consultation.
+                </p>
+                <a href="#contact" class="glow-on-hover animated-content delay-2">
+                    <span class="relative z-10">Get In Touch</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Scene 9: NEW Footer -->
+        <section id="contact" class="full-section" data-theme="dark">
+            <div class="w-full max-w-7xl mx-auto">
+                <div class="section-intro-text text-center animated-content" style="padding-top: 5rem;">
+                    <h2 class="text-white">Get In Touch</h2>
+                    <p>Let's build something amazing together.</p>
+                </div>
+
+                <div id="footer-grid" class="animated-content delay-1">
+                    <!-- Col 1: Contact -->
+                    <div class="footer-col">
+                        <h3>Contact Us</h3>
+                        <ul class="space-y-3">
+                            <li>
+                                <p class="flex items-center"><i
+                                        class="fas fa-envelope w-6 brand-color"></i>lazyworkz@gmail.com</p>
+                            </li>
+                            <!-- <li><p class="flex items-center"><i class="fas fa-phone w-6 brand-color"></i> +1 (555) 123-4567</p></li> -->
+                            <li>
+                                <p class="flex items-center"><i
+                                        class="fas fa-map-marker-alt w-6 brand-color"></i>Najafgarh, New Delhi</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 2: Services -->
+                    <div class="footer-col">
+                        <h3>Services</h3>
+                        <ul class="space-y-3">
+                            <li><a href="#services">Custom Dev</a></li>
+                            <li><a href="#services">Branding</a></li>
+                            <li><a href="#services">eCommerce</a></li>
+                            <li><a href="#services">Data Analytics</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 3: Company -->
+                    <div class="footer-col">
+                        <h3>Company</h3>
+                        <ul class="space-y-3">
+                            <li><a href="#work">Our Work</a></li>
+                            <li><a href="#team">Our Team</a></li>
+                            <li><a href="#testimonials">Clients</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 4: Legal -->
+                    <div class="footer-col">
+                        <h3>Legal</h3>
+                        <ul class="space-y-3">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom animated-content delay-2">
+                    <div class="footer-socials">
+                        <!-- <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a> -->
+                        <a href="https://www.instagram.com/lazyworkz__/" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                    &copy; 2025 LAZYWORKz. All rights reserved.
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mainHeader = document.getElementById('main-header');
+            const mainContainer = document.getElementById('main-container');
+            const sections = document.querySelectorAll('.full-section');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuButton = document.getElementById('mobile-menu-button');
+
+            // --- Mobile Menu Toggle ---
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // --- Smooth Scroll for ALL Anchor Links ---
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+
+                    if (targetSection) {
+                        // Use main container to scroll, not window
+                        mainContainer.scrollTo({
+                            top: targetSection.offsetTop,
+                            behavior: 'smooth'
+                        });
+
+                        // Close mobile menu if open
+                        if (!mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+
+            // --- Section Observer for Animations & Header Theme ---
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Add 'is-active' for animations
+                        entry.target.classList.add('is-active');
+
+                        // Check data-theme and update header
+                        const theme = entry.target.dataset.theme;
+                        mainHeader.classList.toggle('header-dark', theme === 'dark');
+                    } else {
+                        // Remove 'is-active' when not in view
+                        entry.target.classList.remove('is-active');
+                    }
+                });
+            }, {
+                root: mainContainer, // Observe scrolling within the main container
+                threshold: 0.7 // Section is considered active when 70% visible
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // --- Horizontal Scroll Logic ---
+            const addHorizontalScroll = (containerId) => {
+                const container = document.getElementById(containerId);
+                if (container) {
+                    container.addEventListener('wheel', (event) => {
+                        // If scrolling vertically, prevent default and scroll horizontally
+                        if (event.deltaY !== 0) {
+                            event.preventDefault();
+                            // Adjust scroll speed by changing the multiplier
+                            container.scrollLeft += event.deltaY * 1.5;
+                        }
+                    });
+                }
+            };
+
+            addHorizontalScroll('process-container');
+            addHorizontalScroll('work-container'); // Add for new work section
+
+            // --- Testimonial Slider ---
+            const testimonials = document.querySelectorAll('.testimonial-item');
+            const nextBtn = document.getElementById('next-testimonial');
+            const prevBtn = document.getElementById('prev-testimonial');
+            let currentTestimonial = 0;
+
+            function showTestimonial(index) {
+                testimonials.forEach((item, i) => {
+                    item.classList.toggle('active', i === index);
+                });
+            }
+
+            if (testimonials.length > 0) {
+                nextBtn.addEventListener('click', () => {
+                    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+                    showTestimonial(currentTestimonial);
+                });
+
+                prevBtn.addEventListener('click', () => {
+                    currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+                    showTestimonial(currentTestimonial);
+                });
+
+                // Show the first testimonial initially
+                showTestimonial(0);
+            }
+        });
+    </script>
+</body>
+
+</html>
